@@ -1,0 +1,10 @@
+
+.contactLi{
+    align-items: center;
+    font-weight: 600;
+    list-style-type: none;
+    justify-content: space-around;
+}
+ul{
+    padding: 0;
+}

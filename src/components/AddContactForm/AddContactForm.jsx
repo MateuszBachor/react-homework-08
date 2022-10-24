@@ -12,8 +12,6 @@ const AddContactForm = () => {
   const dispatch = useDispatch();
   const date = new Date();
 
-  console.log(contactList);
-
   const handleSubmit = evt => {
     evt.preventDefault();
     const form = evt.currentTarget;

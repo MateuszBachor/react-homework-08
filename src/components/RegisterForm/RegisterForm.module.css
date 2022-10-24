@@ -1,0 +1,40 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formInput{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 200px;
+    border: solid 1px rgb(203, 198, 198);
+}
+input:focus{
+    box-shadow: 1px 1px 10px blue;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+label{
+    font-size: 24px;
+    margin: 15px 0px 5px 25px;
+
+}
+.formBtn{
+    width: 135px;
+    margin: 35px 0px 15px 100px;
+    border-radius: 5px;
+    background-color: rgb(249 249 249);
+    border: 1px solid rgb(203, 198, 198);
+    text-align: center;
+    padding: 4px;
+    border: none ;
+}
+.formBtn:hover{
+box-shadow: 1px 1px 10px blue;
+cursor: pointer;
+}
+

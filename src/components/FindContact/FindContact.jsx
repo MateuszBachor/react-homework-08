@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './FindContact.module.css';
 import { useDispatch } from 'react-redux';
-import { setFilter } from 'redux/filterSlices';
+import { filterContacts } from './../../redux/filterSlices';
 
 const FindContact = () => {
   const dispatch = useDispatch();
-  const onChange = e => dispatch(setFilter(e.target.value));
-
+  const onChange = e => dispatch(filterContacts(e.target.value));
   return (
     <div>
       <div className={styles.findDiv}>

@@ -1,5 +1,10 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { PrivateRoute } from './PrivateRoute';
+import { RestrictedRoute } from './RestrictedRoute';
+import { refreshUser } from 'redux/auth/operations';
+import { useAuth } from 'hooks';
 import { useDispatch, useSelector } from 'react-redux';
 import AddContactForm from '../AddContactForm/AddContactForm';
 import FindContact from 'components/FindContact/FindContact';
@@ -12,7 +17,9 @@ export const App = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
   const error = useSelector(getError);
-
+  const HomePage = lazy(() => import('../pages/Home'));
+  const RegisterPage = lazy(() => import('../pages/Register'));
+  const LoginPage = lazy(() => import('../pages/Login'));
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);

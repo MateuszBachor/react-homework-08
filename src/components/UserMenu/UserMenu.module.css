@@ -1,0 +1,20 @@
+.UserMenuContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logOutBtn{
+    width: 70px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 19px;
+}
+.logOutBtn:hover{
+color: blue;
+}
+p{
+    font-weight: 600;
+}

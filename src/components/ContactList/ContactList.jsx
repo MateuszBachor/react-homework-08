@@ -10,7 +10,6 @@ import { FaTrash } from 'react-icons/fa';
 const ContactList = () => {
   const contactList = useSelector(getContacts);
   const filters = useSelector(getFilter);
-  console.log(filters);
   const dispatch = useDispatch();
 
   if (filters !== null) {

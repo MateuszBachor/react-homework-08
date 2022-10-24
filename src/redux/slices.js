@@ -55,4 +55,4 @@ const contactsSlice = createSlice({
           },
     });
 
-export const tasksReducer = contactsSlice.reducer;
+export const contactsReducer = contactsSlice.reducer;
